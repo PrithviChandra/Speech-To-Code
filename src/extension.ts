@@ -37,6 +37,11 @@ export function activate(context: vscode.ExtensionContext) {
 			}	
 		}
 	});
+	
+	//insert your code here
+	//read from selection
+	//make api call 
+	//display output
 
 	context.subscriptions.push(disposable);
 
