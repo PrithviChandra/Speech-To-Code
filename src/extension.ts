@@ -44,6 +44,8 @@ export function activate(context: vscode.ExtensionContext) {
 	//display output
 
 	context.subscriptions.push(disposable);
+	
+	//dispose the function
 
 }
 
