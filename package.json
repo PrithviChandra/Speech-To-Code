@@ -10,8 +10,11 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:speechtocode.helloWorld",
-    "onCommand:speechtocode.extensionMaker"
+    "onCommand:speechtocode.time_complexity",
+    "onCommand:speechtocode.extensionMaker",
+    "onCommand:speechtocode.bug_fixer",
+    "onCommand:speechtocode.explain_code",
+    "onCommand:speechtocode.translate_code"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -19,6 +22,22 @@
       {
         "command": "speechtocode.extensionMaker",
         "title": "Extension Maker"
+      },
+      {
+        "command": "speechtocode.explain_code",
+        "title": "Code Explanation"
+      },
+      {
+        "command": "speechtocode.time_complexity",
+        "title": "Time Complexity"
+      },
+      {
+        "command": "speechtocode.bug_fixer",
+        "title" : "Python Bug Fixer"
+      },
+      {
+        "command": "speechtocode.translate_code",
+        "title" : "Translate Code"
       }
     ],
     "keybindings": [
@@ -26,6 +45,26 @@
         "command": "speechtocode.extensionMaker",
         "key": "ctrl+k ctrl+k",
         "mac": "cmd+k cmd+k"
+      },
+      {
+        "command":"speechtocode.time_complexity",
+        "key":"ctrl+l ctrl+l",
+        "mac":"cmd+t cmd+t"
+      },
+      {
+        "command":"speechtocode.bug_fixer",
+        "key" : "ctrl+h ctrl+h",
+        "mac" : "cmd+h cmd+h"
+      },
+      {
+        "command":"speechtocode.explain_code",
+        "key" : "ctrl+e ctrl+e",
+        "mac" : "cmd+e cmd+e"
+      },
+      {
+        "command":"speechtocode.translate_code",
+        "key" : "ctrl+m ctrl+m",
+        "mac" : "cmd+m cmd+m"
       }
     ]
   },
