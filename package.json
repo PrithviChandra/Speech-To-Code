@@ -10,8 +10,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:speechtocode.helloWorld",
     "onCommand:speechtocode.extensionMaker"
+    "onCommand:speechtocode.yourEventName"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -19,6 +19,10 @@
       {
         "command": "speechtocode.extensionMaker",
         "title": "Extension Maker"
+      },
+            {
+        "command": "speechtocode.yourEventName",
+        "title": "your title"
       }
     ],
     "keybindings": [
@@ -26,7 +30,13 @@
         "command": "speechtocode.extensionMaker",
         "key": "ctrl+k ctrl+k",
         "mac": "cmd+k cmd+k"
+      },
+        {
+        "command": "speechtocode.yourEventName",
+        "key": "your key binding,
+        "mac": "your key binding"
       }
+      
     ]
   },
   "scripts": {
